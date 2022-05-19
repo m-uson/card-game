@@ -8,11 +8,12 @@ body {
   text-align: center;
   background: #1b1523;
   color: #fff;
+  padding: 0 15px;
 }
 
 .App {
   max-width: 860px;
-  margin: 40px auto;
+  margin: 5px auto;
 }
 button {
   background: none;
@@ -34,6 +35,11 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+@media (max-width: 425px) {
+  .card-grid {
+    grid-gap: 10px;
+  }
+}
 
 .container {
   margin: 10px 20px;
@@ -52,4 +58,20 @@ label {
 }
 .title {
   margin-top: 10px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .flex {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 35px;
+  }
+}
+h1 {
+  margin: 0;
 }
